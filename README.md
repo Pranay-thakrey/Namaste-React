@@ -7,7 +7,7 @@
 
 # Package-lock.json
 - It keep tracks of all the exact versions of packages.
-* It checkes the SHA file in the local machine and the file that is ddployed on production.
+* It checkes the SHA file in the local machine and the file that is deployed on production.
 
 # Bundler
 - Bundler is a dependency.
@@ -43,7 +43,7 @@ all bundled and optimized for production use. You can then deploy the contents o
 # Component composition
 - When we keep component into component it called as component composition
 
-# State variable/ useDtate() hook
+# State variable/ useState() hook
 - Whenever a state variable updates, react will rerender the component. (triggers reconcilliation process)
 
 # Virtual DOM
@@ -59,3 +59,18 @@ all bundled and optimized for production use. You can then deploy the contents o
 - It is a fucntion provided by react which is used to perform operation after intial render. Eg- Like fetching data.
 - It include a callback function and a dependancy array. if a dependacy array is not present then useEffect will call after every render and if the dependacy array is present then it will only call after initial render.
 - If we provide any dependancy into the array (ex- use state variable) then on every update of the array dependacy the useEffect will called.
+
+# Custom hooks
+- it allows us to us to us reusable logic and side effects from a component making our code more modular and cleaner.
+
+const user = {
+    name: "joey",
+    location{
+        city: "NY",
+        state: "NY"
+    }
+};
+
+const copy = {...user};
+copy.name = 'Chandler'
+copy.location.city = "Albany"
